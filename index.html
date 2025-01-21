@@ -7,12 +7,13 @@
 </head>
 
 <body>
-    <h1></h1>
+    <img src="" alt="">
     <script src="/socket.io/socket.io.js"></script>
     <script>
         const socket = io();
-        socket.on('qc-code', (msg) => {
-            // 
+
+        socket.on('qr-code', (msg) => {
+            document.querySelector('img').src = msg;
         });
         socket.on('authenticated', (msg) => {
             // 
