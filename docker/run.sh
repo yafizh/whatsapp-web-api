@@ -1,0 +1,1 @@
+docker run --rm --user 1000:1000 -p 3000:3000 -v $PWD/..:/usr/src/app -w /usr/src/app whatsapp-web-api node --watch index.js

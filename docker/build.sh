@@ -1,0 +1,1 @@
+docker build -t whatsapp-web-api .
